@@ -625,6 +625,8 @@ $sidebar-display: "sidebar-display";
   }
 
   #avatar {
+    visibility: hidden;
+
     &:hover > a {
       border-color: #fff;
     }
