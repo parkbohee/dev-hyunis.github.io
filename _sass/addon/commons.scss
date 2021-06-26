@@ -2,6 +2,7 @@
   The common styles
 */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 @mixin mode-toggle($dark-mode: false) {
   @if $dark-mode {
@@ -51,6 +52,7 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  //font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* --- Typography --- */
@@ -384,7 +386,7 @@ footer {
 
   a {
     blockquote & {
-      color: var(--link-color);
+      color: var(--main-color);
     }
 
     &:not(.img-link) {
@@ -501,7 +503,7 @@ footer {
   border: 1px solid !important;
   padding: 1px 3px;
   border-radius: 3px;
-  color: var(--link-color);
+  color: var(--main-color);
   &:focus {
     box-shadow: none;
   }
@@ -539,7 +541,7 @@ footer {
 }
 
 .btn-box-shadow {
-  box-shadow: 0 0 8px 0 var(--btn-box-shadow) !important;
+  //box-shadow: 0 0 8px 0 var(--btn-box-shadow) !important;
 }
 
 .topbar-up {
@@ -603,7 +605,7 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width-medium;
   z-index: 99;
-  background: var(--sidebar-bg);
+  //background: var(--sidebar-bg);
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
@@ -665,6 +667,7 @@ $sidebar-display: "sidebar-display";
       font-weight: 900;
       font-size: 1.5rem;
       letter-spacing: 0.5px;
+      color: #ec322c;
     }
   }
 
@@ -693,12 +696,14 @@ $sidebar-display: "sidebar-display";
     height: $tab-height;
     &:hover {
       .nav-link {
-        color: #f8f9facf;
+        color: #ec322c;
+        font-weight: bold;
       }
     }
     &.active {
       .nav-link {
-        color: #fcfcfc;
+        color: #ec322c;
+        font-weight: bold;
       }
     }
   }
@@ -776,6 +781,7 @@ $sidebar-display: "sidebar-display";
 
     a {
       @extend %icon;
+      color: #ec322c;
     }
 
     #mode-toggle-wrapper {
@@ -845,8 +851,8 @@ $sidebar-display: "sidebar-display";
   right: 0;
   transition: top 0.2s ease-in-out;
   z-index: 50;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.05);
+  //border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  //box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.05);
   background-color: var(--topbar-wrapper-bg);
 }
 
@@ -859,6 +865,7 @@ $sidebar-display: "sidebar-display";
     font-size: 1rem;
     color: gray;
     padding-left: 0.5rem;
+    visibility: hidden;
 
     a:hover {
       @extend %link-hover;
@@ -887,6 +894,7 @@ $sidebar-display: "sidebar-display";
   border: 1px solid var(--search-wrapper-bg);
   background: var(--search-wrapper-bg);
   padding: 0 0.5rem;
+  margin-top: 10px;
   i {
     z-index: 2;
     font-size: 0.9rem;
@@ -898,7 +906,7 @@ $sidebar-display: "sidebar-display";
 }
 
 #search-cancel { /* 'Cancel' link */
-  color: var(--link-color);
+  color: var(--main-color);
   margin-left: 1rem;
   display: none;
 }
@@ -984,6 +992,7 @@ $sidebar-display: "sidebar-display";
   font-size: 1.1rem;
   font-weight: 600;
   font-family: sans-serif;
+  //font-family: 'Noto Sans KR', sans-serif;
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;

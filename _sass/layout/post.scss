@@ -69,7 +69,7 @@
   .btn {
     @include btn-post-nav;
 
-    color: var(--link-color);
+    color: var(--main-color);
 
     &:hover {
       background: #2a408e;

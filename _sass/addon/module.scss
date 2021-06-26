@@ -7,7 +7,8 @@
 %heading {
   color: var(--heading-color);
   font-weight: 400;
-  font-family: 'Lato', 'Microsoft Yahei', sans-serif;
+  //font-family: 'Lato', 'Microsoft Yahei', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 %tag-hover {
@@ -22,13 +23,13 @@
 }
 
 %link-hover {
-  color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
+  color: var(--main-color) !important;
+  border-bottom: 1px solid var(--main-color);
   text-decoration: none;
 }
 
 %link-color {
-  color: var(--link-color);
+  color: var(--main-color);
 }
 
 %link-underline {
@@ -57,7 +58,7 @@
   text-decoration: none;
 }
 
-@mixin sidebar-links($color: rgba(255, 255, 255, 0.5)) {
+@mixin sidebar-links($color: rgba(236, 50, 44, 0.7)) {
   color: $color;
   transition: color 0.35s ease-in-out;
   user-select: none;
