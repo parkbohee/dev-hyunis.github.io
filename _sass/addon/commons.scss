@@ -327,6 +327,9 @@ footer {
     a {
       color: var(--text-color);
       border-color: var(--main-color);
+      &.img-link {
+        border-color: transparent;
+      }
     }
   }
   h1.post-title {
@@ -1050,6 +1053,10 @@ $sidebar-display: "sidebar-display";
 }
 
 #page {
+  h1.dynamic-title {
+    margin-top: 3.2rem;
+    font-weight: bold;
+  }
   .categories,
   #tags,
   #archives {

@@ -150,6 +150,20 @@
   > span {
     @include panel-label;
   }
+
+  nav[data-toggle=toc] {
+    .nav-link:focus,
+    .nav-link:hover {
+      border-left: 0;
+    }
+
+    .nav-link.active,
+    .nav-link.active:focus,
+    .nav-link.active:hover {
+      color: var(--main-color);
+      border-left: 0;
+    }
+  }
 }
 
 #toc li > a {
