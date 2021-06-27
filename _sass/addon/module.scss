@@ -30,6 +30,8 @@
 
 %link-color {
   color: var(--main-color);
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
 }
 
 %link-underline {
