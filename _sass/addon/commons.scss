@@ -2,7 +2,6 @@
   The common styles
 */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 @mixin mode-toggle($dark-mode: false) {
   @if $dark-mode {
@@ -52,7 +51,6 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
-  //font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* --- Typography --- */
@@ -204,8 +202,8 @@ footer {
     padding: 0.3rem 0.5rem;
     margin: 0 0.35rem 0.5rem 0;
     &:hover {
-      background-color: #2a408e;
-      border-color: #2a408e;
+      background-color: var(--main-color);
+      border-color: var(--main-color);
       color: #fff;
       transition: none;
     }
@@ -855,7 +853,7 @@ $sidebar-display: "sidebar-display";
 
     a:hover,
     #mode-toggle-wrapper i:hover {
-      color: #fff;
+      color: #000;
     }
 
   } // .sidebar-bottom
@@ -1036,7 +1034,6 @@ $sidebar-display: "sidebar-display";
   font-size: 1.1rem;
   font-weight: 600;
   font-family: sans-serif;
-  //font-family: 'Noto Sans KR', sans-serif;
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;

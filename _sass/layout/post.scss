@@ -72,9 +72,9 @@
     color: var(--main-color);
 
     &:hover {
-      background: #2a408e;
+      background: var(--main-color);
       color: #fff;
-      border-color: #2a408e;
+      border-color: var(--main-color);
     }
 
     &.disabled {
