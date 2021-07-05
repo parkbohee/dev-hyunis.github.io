@@ -1,8 +1,8 @@
 ---
-title: 그룹에 따라 선택 필드 변경하기
+title: 사용자(그룹)에 따라 Selection 필드 변경하기
 author: Park Jihee
 date: 2021-07-01 22:11:52 +0800
-categories: [Odoo, Docs]
+categories: [Odoo, docs]
 tags: [odoo, docs]
 ---
 
@@ -65,7 +65,7 @@ def _get_selection(self):
 `widget="radio"` 속성을 부여하여 라디오 버튼 형식으로 선택이 가능한 필드가 완성되었다.
 
 ```xml
-<field name="selc" widget="radio" string="number">
+<field name="selc" widget="radio" string="number"/>
 ```
 
 ## 참고한 사이트
