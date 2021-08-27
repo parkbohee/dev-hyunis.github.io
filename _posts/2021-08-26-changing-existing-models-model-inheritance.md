@@ -6,6 +6,8 @@ categories: [Odoo, models]
 tags: [odoo, ver 13.0, inherit, models]
 ---
 
+# Model 상속 및 확장 (Inheritance and extension)
+
 Odoo는 3가지 유형의 상속을 제공합니다.
 
 - 클래스 상속 (Class inheritance)
@@ -14,13 +16,13 @@ Odoo는 3가지 유형의 상속을 제공합니다.
 
 ![Odoo 3가지 모델 상속](/assets/img/2021-08-26-changing-existing-models-model-inheritance/01.%20inheritance%20and%20extension.png)
 
-# 클래스 상속 (Class inheritance)
+## 클래스 상속 (Class inheritance)
 
 클래스 상속은 기존 모델을 확장하는 상속으로, 가장 많이 사용되는 방식입니다. 기존 모델에 새로운 필드를 추가하거나, 메소드를 수정하는 경우에 사용됩니다.
 
 `_inherit` 속성에 상속받을 모델 명을 정의합니다.
 
-## 새로운 필드 추가
+### 새로운 필드 추가
 
 `res.partner` 모델에 Github 아이디 필드를 추가하고자 하는 경우, 아래와 같이 코드를 작성할 수 있습니다.
 
@@ -33,7 +35,7 @@ class ResPartner(models.Model):
     github = fields.Char(string='Github Username')
 ```
 
-## 기존 메소드 수정
+### 기존 메소드 수정
 
 모델에 레코드가 삭제될 때, `unlink` 메소드가 실행됩니다.
 
@@ -53,7 +55,7 @@ class ResPartner(models.Model):
         return super(ResPartner, self).unlink()
 ```
 
-# 프로토타입 상속 (Prototype inheritance)
+## 프로토타입 상속 (Prototype inheritance)
 
 기존 모델에 정의를 복사해 새로운 모델을 생성하는 경우에 사용됩니다.
 
@@ -67,7 +69,7 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 ```
 
-# 위임 상속 (Delegation inheritance)
+## 위임 상속 (Delegation inheritance)
 
 ⚠️ `_inherit` 속성 대신 `_inherits` 속성을 사용합니다. (s의 차이)
 
