@@ -1,7 +1,7 @@
 ---
 title: 기존 모델(Model)을 상속 받아, 변경하기
 author: Park Bohee
-date: 2021-07-01 22:11:52 +0800
+date: 2021-08-26 12:23:00 +0800
 categories: [Odoo, models]
 tags: [odoo, ver 13.0, inherit, models]
 ---
