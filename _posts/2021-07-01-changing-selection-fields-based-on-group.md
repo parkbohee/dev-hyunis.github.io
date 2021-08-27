@@ -1,9 +1,9 @@
 ---
-title: 사용자(그룹)에 따라 Selection 필드 변경하기
+title: 그룹에 따라 Selection 필드 변경하기
 author: Park Jihee
 date: 2021-07-01 22:11:52 +0800
-categories: [Odoo, docs]
-tags: [odoo, docs]
+categories: [Odoo, views]
+tags: [odoo, selection, views]
 ---
 
 특정 그룹 (사용자, 관리자)에 따라 선택 필드를 감추는 방법에 대한 글이다.
@@ -16,7 +16,7 @@ tags: [odoo, docs]
 number = fields.Selection([('one', 'One'), ('two', 'Two')], string="number")
 ```
 
-## 함수 정의
+# 함수 정의
 
 함수를 호출하여 값을 채우기 위해 `@api.model`을 사용한다.
 
@@ -29,7 +29,7 @@ def _get_seleciton(self):
 return selection
 ```
 
-## 함수 호출
+# 함수 호출
 
 함수를 정의했으니 함수를 호출하는 필드를 작성한다.
 
@@ -39,7 +39,7 @@ return selection
 selc = fields.Selection(string="number", selection=_get_selection, default="one")
 ```
 
-## 조건
+# 조건
 
 이제 그룹에 따라 다른 선택 필드를 표시한다.
 
@@ -58,7 +58,7 @@ def _get_selection(self):
     return selection
 ```
 
-## view 에 추가
+# view 에 추가
 
 화면에 나타내기 위해 xml 에서 field 를 추가했다.
 
@@ -68,6 +68,7 @@ def _get_selection(self):
 <field name="selc" widget="radio" string="number"/>
 ```
 
-## 참고한 사이트
+# 참고한 사이트
 
 👉 [http://justodoo.blogspot.com/2019/02/how-to-show-selection-values-based-on.html](http://justodoo.blogspot.com/2019/02/how-to-show-selection-values-based-on.html)
+
