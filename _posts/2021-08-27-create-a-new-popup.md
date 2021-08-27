@@ -1,7 +1,7 @@
 ---
 title: Odoo 팝업 생성하기 (Confirm, Error, dialog)
 author: Park Jihee
-date: 2021-08-27 10:13:19 +0800
+date: 2021-08-27 16:13:19 +0000
 categories: [Odoo, views]
 tags: [odoo, views, popup]
 ---

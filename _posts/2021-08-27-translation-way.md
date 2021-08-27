@@ -1,7 +1,7 @@
 ---
 title: Odoo 번역 추가 및 변경
 author: Yoon Sua
-date: 2021-08-27 22:11:52 +0800
+date: 2021-08-27 16:11:52 +0000
 categories: [Odoo, translation]
 tags: [odoo, view, translation]
 ---
