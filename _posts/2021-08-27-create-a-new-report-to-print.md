@@ -1,7 +1,7 @@
 ---
 title: Odoo PDF 보고서 생성하기
 author: Park Jihee
-date: 2021-08-27 19:35:12 +0000
+date: 2021-08-27 07:05:00 +0800
 categories: [Odoo, views]
 tags: [odoo, views, report]
 ---
