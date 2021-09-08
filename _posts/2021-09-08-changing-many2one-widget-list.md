@@ -10,13 +10,13 @@ tags: [odoo, ver 14.0, inherit, widget]
 
 요구사항에 맞춰 LOT/일련번호가 `일련번호 - 수량` 형식으로 나타나도록 변경했습니다.
 
-![_rec_name 적용 1](/assets/img/2021-09-08-custom-many2one-widget-list/1.png)
+![_rec_name 적용 1](/assets/img/2021-09-08-changing-many2one-widget-list/1.png){: .shadow.normal}
 
 <br>
 
 현재 방식은 `_name_get` 메소드를 사용해 record를 대표하는 이름을 변경한 방식으로, LOT/일련번호 form 뷰에서도 `일련번호 - 수량` 형식으로 나타납니다.
 
-![_rec_name 적용 2](/assets/img/2021-09-08-custom-many2one-widget-list/2.png)
+![_rec_name 적용 2](/assets/img/2021-09-08-changing-many2one-widget-list/2.png){: .shadow.normal}
 
 ```python
 class ProductionLot(models.Model):
@@ -38,7 +38,7 @@ class ProductionLot(models.Model):
 
 아래 사진처럼 목록에서만 `일련번호 - 수량EA` 형식으로 보여지고, 목록에서 선택했을 때는 `일련번호`만 보여지도록 변경합니다.
 
-![최종 결과](/assets/img/2021-09-08-custom-many2one-widget-list/3.png)
+<img src="/assets/img/2021-09-08-changing-many2one-widget-list/3.png" alt="최종 결과" class="shadow" width="200"/>
 
 ## 1. Many2one 위젯 상속
 
