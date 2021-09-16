@@ -54,7 +54,7 @@ $  python odoo-bin --config=./config/.odoorc --i18n-overwrite -u module_name
 여러 모듈일 경우, 아래와 같이 사용한다.
 
 ```bash
-$  python odoo-bin --config=./config/.odoorc --i18n-overwrite -u module_name1 -u module_name2 -u module_name3
+$  python odoo-bin --config=./config/.odoorc --i18n-overwrite -u module_name1,module_name2,module_name3
 ```
 
 # 참고한 사이트
