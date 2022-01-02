@@ -6,6 +6,10 @@ categories: [Odoo, docs]
 tags: [odoo, ver 13.0]
 ---
 
+[2편 - ‘파이참(Pycharm)에 Odoo 환경 설정하기’](/posts/how-to-configure-odoo-with-pycharm){:target="_blank"}
+
+<br>
+
 ###### 이 글을 읽기 전!
 
 ⚠️ MacOS를 기준으로 작성된 글입니다.
