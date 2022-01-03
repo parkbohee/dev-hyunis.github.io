@@ -232,8 +232,6 @@ $ pip install psycopg2-binary
 
 # 마치며, 🙇🏻
 
-파이썬 3.8 대 버전도 사용해봤지만, 패키지 설치 중 오류가 많이 나서 설치가 조금 힘들었던 기억이 난다. 🤔
-
 ## 참고한 사이트
 
 [https://www.odoo.com/documentation/13.0/setup/install.html#mac-os](https://www.odoo.com/documentation/13.0/setup/install.html#mac-os){:target="_blank"}

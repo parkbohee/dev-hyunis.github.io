@@ -3,10 +3,14 @@ title: '파이참(Pycharm)에 Odoo 환경 설정하기'
 author: Park Bohee
 date: 2022-01-02 07:25:00 +0900
 categories: [Odoo, docs]
-tags: [odoo, ver 13.0]
+tags: [odoo, pycharm]
 ---
 
-[1편 - ‘MacOS에 Odoo 버전 13 설치하기’][1편]{:target="_blank"}
+사용하는 odoo 버전에 따라서 설치를 진행하면 된다.
+
+[1편 - ‘MacOS에 Odoo 버전 13 설치하기’][1편 v13]{:target="_blank"}
+
+[1편 - ‘MacOS에 Odoo 버전 14 설치하기’][1편 v14]{:target="_blank"}
 
 <br>
 
@@ -44,7 +48,7 @@ tags: [odoo, ver 13.0]
 
 ## #5
 
-목록에 [1편][1편]{:target="_blank"}에서 생성한 가상 환경이 없다면 `+` 버튼을 클릭하고, 만약 있다면 [#7][#7]로 이동한다.
+목록에 [1편][1편 v13]{:target="_blank"}에서 생성한 가상 환경이 없다면 `+` 버튼을 클릭하고, 만약 있다면 [#7][#7]로 이동한다.
 
 ![Python Interpreter 설정 5](/assets/img/2022-01-02-how-to-configure-odoo-with-pycharm/05.%20Python%20Interpreter%20설정%205.png)
 
@@ -177,5 +181,6 @@ Log가 나타난다.
 ![Log가 안보일 경우 5](/assets/img/2022-01-02-how-to-configure-odoo-with-pycharm/25.%20Log가%20안보일%20경우%205.png){: .shadow}
 
 
-[1편]:/posts/how-to-install-odoo-13-version
+[1편 v13]:/posts/how-to-install-odoo-13-version
+[1편 v14]:/posts/how-to-install-odoo-14-version
 [#7]:#7
