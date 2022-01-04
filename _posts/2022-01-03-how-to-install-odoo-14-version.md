@@ -31,13 +31,14 @@ Odoo는 사용자가 그리 많지 않기 떄문에 딱 맞는 설치 가이드�
 
 ## postgresql 설치
 
-Odoo에서는 데이터베이스로 PostgreSQL을 사용한다.
-
-⚠️ 필요에 따라 다른 버전을 사용해도 되지만, 10 버전 이후 버전을 사용해야 한다.
+Odoo에서는 데이터베이스로 PostgreSQL을 사용한다. 필요에 따라 다른 버전을 사용해도 되지만, 10 이후 버전을 사용해야 한다.
 
 ```bash
+$ brew install postgresql
 $ brew install postgresql@11
 ```
+
+⚠️ `brew install postgresql` 명령어는 추후 `psycopg2` 라이브러리 설치 시, postgresql 바이너리를 찾지 못해 오류가 발생하기 때문에 추가로 설치한다.
 
 <br>
 
@@ -53,11 +54,13 @@ $ brew install pyenv
 
 ### 환경 변수 설정
 
-`zsh`를 사용하는 경우, `~/.bashrc` 대신 `~/.zshrc`로 변경해 명령어를 실행한다.
+`bash`를 사용하는 경우, `~/.zshrc` 대신 `~/.bashrc`로 변경해 명령어를 실행한다.
 
 ```bash
-$ echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
-$ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+$ echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
+$ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
 
 ## pyenv-virtualenv
@@ -70,10 +73,11 @@ $ brew install pyenv-virtualenv
 
 ### 환경 변수 설정
 
-`zsh`를 사용하는 경우, `~/.bashrc` 대신 `~/.zshrc`로 변경해 명령어를 실행한다.
+`bash`를 사용하는 경우, `~/.zshrc` 대신 `~/.bashrc`로 변경해 명령어를 실행한다.
 
 ```bash
 $ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+$ echo 'export PYENV_VIRTUALENV_DISABLE_PROMPT=1' >> ~/.zshrc
 ```
 
 # Odoo 설치
@@ -112,20 +116,39 @@ $ pyenv local {가상환경명}
 $ pyenv local odoo-14-venv
 ```
 
-### pip 설치
+<br>
 
-pip를 통해 Odoo를 실행하는데 필요한 패키지를 설치한다.
+⚠️ 가상 환경 지정 후, 파이썬 버전을 확인해 가상 환경이 올바르게 생성되었는지 확인한다.
+설정한 `3.8.5` 버전과 다른 버전이 출력된다면 pyenv 또는 pyenv-virtualenv 환경 변수가 잘못 설정된 것으로 수정해야 한다.
 
 ```bash
+$ python -V
+Python 3.8.5
+```
+
+### pip 설치
+
+pip를 통해 Odoo를 실행하는데 필요한 패키지를 설치한다. `wheel` 라이브러리는 requirements.txt에 없으므로, 따로 설치한다.
+
+```bash
+$ pip install wheel
 $ pip install -r requirements.txt
 ```
 
 <br>
 
-🚨 설치 도중 `Pillow` 패키지에서 오류가 난다면 pip 버전을 업그레이드한 후에 다시 진행한다.
+🚨 설치 도중 `psycopg2` 라이브러리에서 오류가 난다면, 먼저 1번째 명령어를 입력해보고 그래도 같은 오류가 난다면 2번째 명령어를 입력한다.
 
 ```bash
-$ pip install --upgrade pip
+# 1번째
+$ LDFLAGS=-L/usr/local/opt/openssl/lib pip install psycopg2==2.8.5
+```
+
+```bash
+# 2번째
+$ brew install openssl
+$ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+$ LDFLAGS=-L/usr/local/opt/openssl/lib pip install psycopg2==2.8.5
 ```
 
 ## Odoo 환경 설정
@@ -213,15 +236,10 @@ $ python ./odoo-bin --config=./config/.odoorc
 
 <br>
 
-🚨 실행 시 아래와 같이 오류가 나타난다면 `psycopg2-binary` 패키지를 설치한 후에 다시 진행한다.
+🚨 macOS로 `Monterey`를 사용 중이라면 실행 시 `ValueError: current limit exceeds maximum limit`가 발생하는데, 위 명령어 대신 아래 명령어를 통해 Odoo를 실행시키면 된다.
 
 ```bash
-/Users/parkbohee/.pyenv/versions/odoo-14-venv/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
-  """)
-```
-
-```bash
-$ pip install psycopg2-binary
+$ python ./odoo-bin --config=./config/.odoorc --limit-memory-hard 0
 ```
 
 <br>

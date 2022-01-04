@@ -53,11 +53,13 @@ $ brew install pyenv
 
 ### 환경 변수 설정
 
-`zsh`를 사용하는 경우, `~/.bashrc` 대신 `~/.zshrc`로 변경해 명령어를 실행한다.
+`bash`를 사용하는 경우, `~/.zshrc` 대신 `~/.bashrc`로 변경해 명령어를 실행한다.
 
 ```bash
-$ echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
-$ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+$ echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
+$ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
 
 ## pyenv-virtualenv
@@ -70,10 +72,11 @@ $ brew install pyenv-virtualenv
 
 ### 환경 변수 설정
 
-`zsh`를 사용하는 경우, `~/.bashrc` 대신 `~/.zshrc`로 변경해 명령어를 실행한다.
+`bash`를 사용하는 경우, `~/.zshrc` 대신 `~/.bashrc`로 변경해 명령어를 실행한다.
 
 ```bash
 $ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+$ echo 'export PYENV_VIRTUALENV_DISABLE_PROMPT=1' >> ~/.zshrc
 ```
 
 # Odoo 설치
@@ -110,6 +113,16 @@ $ pyenv virtualenv 3.7.6 odoo-13-venv
 ```bash
 $ pyenv local {가상환경명}
 $ pyenv local odoo-13-venv
+```
+
+<br>
+
+⚠️ 가상 환경 지정 후, 파이썬 버전을 확인해 가상 환경이 올바르게 생성되었는지 확인한다.
+설정한 `3.7.6` 버전과 다른 버전이 출력된다면 pyenv 또는 pyenv-virtualenv 환경 변수가 잘못 설정된 것이로 수정해야 한다.
+
+```bash
+$ python -V
+Python 3.7.6
 ```
 
 ### pip 설치
