@@ -128,10 +128,9 @@ Python 3.8.5
 
 ### pip 설치
 
-pip를 통해 Odoo를 실행하는데 필요한 패키지를 설치한다. `wheel` 라이브러리는 requirements.txt에 없으므로, 따로 설치한다.
+pip를 통해 Odoo를 실행하는데 필요한 패키지를 설치한다.
 
 ```bash
-$ pip install wheel
 $ pip install -r requirements.txt
 ```
 
@@ -195,9 +194,17 @@ $ mv ~/.odoorc ./config/
 - `logfile` log 파일 경로 → 디렉토리, 파일이 없다면 생성한다.
 
 ```
-addons_path = {odoo-14 path}/odoo/addons, {odoo-14 path}/addons
+addons_path = {odoo-14 path}/odoo/addons
 data_dir = {odoo-14 path}/config
 logfile = {odoo-14 path}/config/log/odooserver.log
+```
+
+<br>
+
+Community 버전일 경우, `addons_path`를 아래와 같이 수정한다.
+
+```
+addons_path = {odoo-14 path}/odoo/addons, {odoo-14 path}/addons
 ```
 
 <br>

@@ -185,9 +185,17 @@ $ mv ~/.odoorc ./config/
 - `logfile` log 파일 경로 → 디렉토리, 파일이 없다면 생성한다.
 
 ```
-addons_path = {odoo-13 path}/odoo/addons, {odoo-13 path}/addons
+addons_path = {odoo-13 path}/odoo/addons
 data_dir = {odoo-13 path}/config
 logfile = {odoo-13 path}/config/log/odooserver.log
+```
+
+<br>
+
+Community 버전일 경우, `addons_path`를 아래와 같이 수정한다.
+
+```
+addons_path = {odoo-13 path}/odoo/addons, {odoo-13 path}/addons
 ```
 
 <br>
