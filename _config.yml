@@ -17,10 +17,10 @@ timezone: Asia/Seoul
 # --------------------------
 title: Hyun.I.S                        # the main title
 
-tagline: Share dev documents 💻        # it will display as the sub-title
+tagline: 현정보시스템 기술 블로그 💻          # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  기억보다는 기록을 ✏️. 현정보시스템 기술개발팀 기술 공유 블로그입니다.
+  기억보단 기록을. 현정보시스템 기술개발팀 기술 블로그 입니다.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://dev-hyunis.github.io'
