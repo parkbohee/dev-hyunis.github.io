@@ -35,9 +35,7 @@ const resource = [
   '{{ favicon_path }}/favicon-16x16.png',
   '{{ favicon_path }}/favicon-32x32.png',
   '{{ favicon_path }}/favicon.ico',
-  '{{ favicon_path }}/mstile-150x150.png',
   '{{ favicon_path }}/site.webmanifest',
-  '{{ favicon_path }}/browserconfig.xml'
 
 ];
 
