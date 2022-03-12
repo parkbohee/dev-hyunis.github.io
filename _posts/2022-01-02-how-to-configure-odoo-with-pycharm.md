@@ -1,9 +1,9 @@
 ---
-title: '파이참(Pycharm)에 Odoo 환경 설정하기'
+title: Pycharm에 Odoo 환경 설정하기
 author: Park Bohee
-date: 2022-01-02 07:25:00 +0900
+date: 2022-01-02 07:30:00 +0900
 categories: [Odoo, docs]
-tags: [odoo, pycharm]
+tags: [odoo, Pycharm, configuration]
 ---
 
 사용하는 odoo 버전에 따라서 설치를 진행하면 된다.

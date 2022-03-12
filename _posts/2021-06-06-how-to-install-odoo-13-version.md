@@ -1,7 +1,7 @@
 ---
 title: MacOS에 Odoo 버전 13 설치하기
 author: Park Bohee
-date: 2021-06-06 19:16:29 +0800
+date: 2021-06-06 19:20:00 +0800
 categories: [Odoo, docs]
 tags: [odoo, ver 13.0]
 ---

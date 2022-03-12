@@ -1,9 +1,9 @@
 ---
-title: DataGrip DB 연결하기
+title: DataGrip에서 Database 연결하기
 author: Park Jihee
 date: 2022-01-09 15:20:00 +0800
-categories: [Odoo, docs]
-tags: [odoo, database]
+categories: [Database]
+tags: [Datagrip, DB]
 ---
 
 ## 1. DataGrip 설치하기

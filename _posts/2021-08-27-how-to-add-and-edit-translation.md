@@ -1,9 +1,9 @@
 ---
-title: Odoo 번역 추가 및 변경
+title: Odoo에서 번역 추가 및 변경하기
 author: Yoon Sua
-date: 2021-08-27 06:05:00 +0800
-categories: [Odoo, translation]
-tags: [odoo, view, translation]
+date: 2021-08-27 06:00:00 +0800
+categories: [Odoo, i18n]
+tags: [odoo, i18n, 번역]
 ---
 
 ## 번역을 위한 String 작성

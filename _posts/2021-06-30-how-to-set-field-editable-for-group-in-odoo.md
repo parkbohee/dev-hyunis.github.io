@@ -1,9 +1,9 @@
 ---
-title: Odoo에서 관리자만 수정이 가능하도록 View 변경하기
+title: 관리자만 수정이 가능하도록 View 변경하기
 author: Park Bohee
-date: 2021-06-30 23:56:05 +0800
+date: 2021-06-30 23:50:00 +0800
 categories: [Odoo, views]
-tags: [odoo, ver 13.0, inherit, views, administration]
+tags: [odoo, ver 13.0, views, 상속]
 ---
 
 # 문제 상황

@@ -1,9 +1,9 @@
 ---
-title: Odoo PDF 보고서 생성하기
+title: Odoo PDF 보고서(report) 생성하기
 author: Park Jihee
-date: 2021-08-27 07:05:00 +0800
+date: 2021-08-27 07:00:00 +0800
 categories: [Odoo, views]
-tags: [odoo, views, report]
+tags: [odoo, views, report, PDF]
 ---
 
 Odoo 의 보고서는 인쇄 버튼을 생성하여 보고서를 추가하지 않고 해당 모델에 보고서를 만들면 자동으로 인쇄 버튼이 생성됩니다.

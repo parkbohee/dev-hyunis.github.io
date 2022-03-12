@@ -1,9 +1,9 @@
 ---
 title: 그룹에 따라 Selection 필드 변경하기
 author: Park Jihee
-date: 2021-07-01 22:11:52 +0800
+date: 2021-07-01 22:10:00 +0800
 categories: [Odoo, views]
-tags: [odoo, selection, views]
+tags: [odoo, views, selection]
 ---
 
 특정 그룹 (사용자, 관리자)에 따라 선택 필드를 감추는 방법에 대한 글입니다.

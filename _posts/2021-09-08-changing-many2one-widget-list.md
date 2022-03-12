@@ -3,7 +3,7 @@ title: Many2one 위젯을 상속받아, 목록 변경하기
 author: Park Bohee
 date: 2021-09-08 05:20:00 +0800
 categories: [Odoo, javascript]
-tags: [odoo, ver 14.0, inherit, widget]
+tags: [odoo, ver 14.0, many2one, widget, 상속]
 ---
 
 # 문제 상황

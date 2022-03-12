@@ -1,9 +1,9 @@
 ---
-title: Custom 모듈 설치 시, 기존 모듈에 번역 수정 사항 적용하기
+title: 기존(Core) 모듈 번역 덮어씌우기
 author: Park Bohee
-date: 2021-07-01 21:08:33 +0800
+date: 2021-07-01 21:10:00 +0800
 categories: [Odoo, i18n]
-tags: [odoo, ver 13.0, inherit, translation]
+tags: [odoo, ver 13.0, i18n, 상속, 번역]
 ---
 
 # 문제 상황

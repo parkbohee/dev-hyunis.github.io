@@ -1,9 +1,9 @@
 ---
-title: Odoo 팝업 생성하기 (Confirm, Error, dialog)
+title: Odoo 팝업(Popup) 생성하기
 author: Park Jihee
-date: 2021-08-27 10:05:00 +0800
+date: 2021-08-27 10:00:00 +0800
 categories: [Odoo, views]
-tags: [odoo, views, popup]
+tags: [odoo, views, popup, dialog]
 ---
 
 # Confirm 팝업

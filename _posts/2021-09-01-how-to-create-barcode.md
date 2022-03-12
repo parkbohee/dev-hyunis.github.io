@@ -1,9 +1,9 @@
 ---
-title: Barcode 생성
+title: Odoo 바코드(Barcode) 생성하기
 author: Yoon Sua
-date: 2021-09-01 06:05:00 +0800
-categories: [Odoo, barcode]
-tags: [odoo, barcode]
+date: 2021-09-01 06:00:00 +0800
+categories: [Odoo, docs]
+tags: [odoo, 바코드, QR 코드]
 ---
 
 텍스트로 barcode와 QRcode 생성하는 방법에 대한 글입니다.

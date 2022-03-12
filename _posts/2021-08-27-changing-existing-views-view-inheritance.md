@@ -1,9 +1,9 @@
 ---
-title: 기존 뷰(View)를 상속 받아, 변경하기
+title: Odoo의 뷰(View) 상속에 대해 알아보기
 author: Park Bohee
-date: 2021-08-27 05:05:00 +0800
+date: 2021-08-27 05:00:00 +0800
 categories: [Odoo, views]
-tags: [odoo, ver 13.0, inherit, views]
+tags: [odoo, ver 13.0, views, 상속]
 ---
 
 # View 상속 (Inheritance)

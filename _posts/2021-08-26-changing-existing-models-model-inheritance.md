@@ -1,9 +1,9 @@
 ---
-title: 기존 모델(Model)을 상속 받아, 변경하기
+title: Odoo의 모델(Model) 상속에 대해 알아보기
 author: Park Bohee
 date: 2021-08-26 12:23:00 +0800
 categories: [Odoo, models]
-tags: [odoo, ver 13.0, inherit, models]
+tags: [odoo, ver 13.0, models, 상속]
 ---
 
 # Model 상속 및 확장 (Inheritance and extension)
