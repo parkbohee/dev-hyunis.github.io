@@ -17,7 +17,7 @@ timezone: Asia/Seoul
 # --------------------------
 title: Hyun.I.S                        # the main title
 
-tagline: 현정보시스템 기술 블로그 💻          # it will display as the sub-title
+tagline: Share dev documents 💻        # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   기억보다는 기록을 ✏️. 현정보시스템 기술개발팀 기술 공유 블로그입니다.

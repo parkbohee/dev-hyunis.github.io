@@ -69,16 +69,12 @@
   .btn {
     @include btn-post-nav;
 
-    color: var(--text-color);
+    color: var(--main-color);
     transition: all 0.2s;
-
-    p {
-      font-weight: bold;
-      font-family: 'Lato', 'Microsoft Yahei', sans-serif;
-    }
 
     &:hover {
       background: #fff;
+      color: var(--main-color);
       border-color: var(--main-color);
     }
 
@@ -196,8 +192,7 @@
     h3 {
       font-size: 1.1rem;
       line-height: 1.4rem;
-      color: var(--text-color);
-      font-weight: bold;
+      color: var(--main-color);
     }
     &:hover {
       //-webkit-transform: translate3d(0, -3px, 0);

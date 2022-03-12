@@ -30,12 +30,10 @@
     }
     &.active {
       .page-link {
+        background-color: var(--main-color);
         border-color: var(--main-color);
         //box-shadow: 0 0 8px 0 var(--btn-paginator-shadow) !important;
-        color: var(--main-color);
-        &:hover {
-          background-color: #ffffff;
-        }
+        color: var(--btn-text-color);
       }
     }
     &.disabled {
@@ -60,29 +58,11 @@
 
   .post-preview {
     padding-top: 1.5rem;
-    padding-bottom: 1.6rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--main-border-color);
 
-    .post-tags {
-      margin-bottom: 0.7rem;
-      span {
-        display: inline-block;
-        color: var(--main-color);
-        margin-right: 1rem;
-        &:before {
-          content: '#';
-          margin-right: 0.1rem;
-        }
-      }
-    }
-
-    a {
-      font-weight: bold;
-      &:hover {
-        color: var(--text-color);
-        border-bottom: 1px solid var(--main-color);
-        text-decoration: none;
-      }
+    a:hover {
+      @extend %link-hover;
     }
 
     h1 {
@@ -101,8 +81,8 @@
 
     .post-content {
       font-size: 0.95rem;
-      margin-top: 1rem;
-      margin-bottom: 0.9rem;
+      margin-top: 0.7rem;
+      margin-bottom: 0.6rem;
       color: var(--post-list-text-color);
       > p {
         /* Make preview shorter on the homepage */

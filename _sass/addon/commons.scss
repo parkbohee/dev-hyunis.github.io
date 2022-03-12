@@ -718,7 +718,7 @@ $sidebar-display: "sidebar-display";
       font-weight: 900;
       font-size: 1.5rem;
       letter-spacing: 0.5px;
-      color: var(--text-color);
+      color: #ec322c;
     }
   }
 
@@ -747,13 +747,13 @@ $sidebar-display: "sidebar-display";
     height: $tab-height;
     &:hover {
       .nav-link {
-        color: var(--text-color);
+        color: #ec322c;
         font-weight: bold;
       }
     }
     &.active {
       .nav-link {
-        color: var(--text-color);
+        color: #ec322c;
         font-weight: bold;
       }
     }
