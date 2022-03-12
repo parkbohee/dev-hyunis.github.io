@@ -1,9 +1,9 @@
 ---
-title: Pycharm에 Odoo 환경 설정하기
+title: PyCharm에 Odoo 환경 설정하기
 author: Park Bohee
 date: 2022-01-02 07:30:00 +0900
 categories: [Odoo, docs]
-tags: [odoo, Pycharm, configuration]
+tags: [odoo, PyCharm, configuration]
 ---
 
 사용하는 odoo 버전에 따라서 설치를 진행하면 된다.
@@ -14,13 +14,13 @@ tags: [odoo, Pycharm, configuration]
 
 <br>
 
-1편에서는 Terminal에 명령어를 입력해 Odoo를 실행했는데, Pycharm에 Configuration을 설정하면 버튼 하나로 Odoo를 실행할 수 있다.
+1편에서는 Terminal에 명령어를 입력해 Odoo를 실행했는데, PyCharm에 Configuration을 설정하면 버튼 하나로 Odoo를 실행할 수 있다.
 
 # 파이썬 Interpreter 설정하기
 
 ## #1
 
-상단 메뉴에서 `Pycharm`, `Preferences`를 클릭하면, 환경설정 창이 나타난다.
+상단 메뉴에서 `PyCharm`, `Preferences`를 클릭하면, 환경설정 창이 나타난다.
 
 (또는 `⌘,` 단축키를 사용할 수 있다.)
 
