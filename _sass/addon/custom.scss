@@ -20,44 +20,67 @@ $main-color: #ec322c;
 
   .post {
 
-    .post-preview {
-      padding-top: 1.4rem;
-      padding-bottom: 1.4rem;
+    #post-list {
 
-      h1 {
-        font-weight: bold;
+      .post-preview {
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
 
-        a {
-          color: var(--text-color);
-          border-bottom-color: transparent;
-          transition: all 0.2s;
+        h1 {
+          font-weight: bold;
 
-          &:hover {
-            color: var(--text-color) !important;
-            border-bottom-color: $main-color;
+          a {
+            color: var(--text-color);
+            border-bottom-color: transparent;
+            transition: all 0.2s;
+
+            &:hover {
+              color: var(--text-color) !important;
+              border-bottom-color: $main-color;
+            }
           }
         }
-      }
 
-      .post-tags {
-        margin-bottom: 0.8rem;
+        .post-tags {
+          margin-bottom: 0.8rem;
 
-        span {
-          display: inline-block;
-          color: $main-color;
-          margin-right: 1rem;
+          span {
+            display: inline-block;
+            color: $main-color;
+            margin-right: 1rem;
 
-          &:before {
-            content: '#';
-            margin-right: 0.1rem;
+            &:before {
+              content: '#';
+              margin-right: 0.1rem;
+            }
           }
         }
-      }
 
-      .post-content {
-        font-size: 0.95rem;
-        margin-top: 1.0rem;
-        margin-bottom: 0.9rem;
+        .post-content {
+          font-size: 0.95rem;
+          margin-top: 1.0rem;
+          margin-bottom: 0.9rem;
+        }
+      }
+    }
+
+    ul.pagination {
+      justify-content: center;
+
+      li.page-item {
+
+        a.page-link {
+          box-shadow: 0 0 8px 0 transparent !important;
+        }
+
+        &.active {
+
+          a.page-link {
+            color: $main-color;
+            border-color: $main-color;
+            background-color: var(--button-bg);
+          }
+        }
       }
     }
   }
