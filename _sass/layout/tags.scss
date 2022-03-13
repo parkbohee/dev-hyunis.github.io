@@ -3,21 +3,17 @@
 */
 
 .tag {
-  border-radius: 1.0rem;
-  padding: 6px 12px 7px;
+  border-radius: 0.7em;
+  padding: 6px 8px 7px;
   margin-right: 0.8rem;
   line-height: 3rem;
   letter-spacing: 0;
   border: 1px solid var(--tag-border) !important;
-  //box-shadow: 0 0 3px 0 var(--tag-shadow);
+  box-shadow: 0 0 3px 0 var(--tag-shadow);
+
   span {
     margin-left: 0.6em;
     font-size: 0.7em;
     font-family: 'Oswald', sans-serif;
-  }
-  &:hover {
-    .text-muted {
-      color: var(--main-color) !important;
-    }
   }
 }
