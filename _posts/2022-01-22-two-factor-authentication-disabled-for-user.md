@@ -1,6 +1,8 @@
 ---
 title: 사용자 2단계 인증(2FA) 비활성화하기
-author: Park Bohee
+author:
+  name: Park Bohee
+  link: https://github.com/parkbohee
 date: 2022-01-22 09:00:00 +0900
 categories: [Odoo, docs]
 tags: [odoo, 2FA, 인증, 로그인]

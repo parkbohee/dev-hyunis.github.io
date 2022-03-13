@@ -1,6 +1,8 @@
 ---
 title: Odoo의 뷰(View) 상속에 대해 알아보기
-author: Park Bohee
+author:
+  name: Park Bohee
+  link: https://github.com/parkbohee
 date: 2021-08-27 05:00:00 +0800
 categories: [Odoo, views]
 tags: [odoo, ver 13.0, views, 상속]

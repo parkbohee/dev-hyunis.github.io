@@ -1,6 +1,8 @@
 ---
 title: Odoo 팝업(Popup) 생성하기
-author: Park Jihee
+author:
+  name: Park Jihee
+  link: https://github.com/park-jihee
 date: 2021-08-27 10:00:00 +0800
 categories: [Odoo, views]
 tags: [odoo, views, popup, dialog]

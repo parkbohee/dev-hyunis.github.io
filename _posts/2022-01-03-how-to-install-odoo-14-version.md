@@ -1,6 +1,8 @@
 ---
 title: MacOS에 Odoo 버전 14 설치하기
-author: Park Bohee
+author:
+  name: Park Bohee
+  link: https://github.com/parkbohee
 date: 2022-01-03 02:30:00 +0900
 categories: [Odoo, docs]
 tags: [odoo, ver 14.0]

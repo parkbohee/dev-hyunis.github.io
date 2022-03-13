@@ -1,6 +1,8 @@
 ---
 title: PyCharm에 Odoo 환경 설정하기
-author: Park Bohee
+author:
+  name: Park Bohee
+  link: https://github.com/parkbohee
 date: 2022-01-02 07:30:00 +0900
 categories: [Odoo, docs]
 tags: [odoo, PyCharm, configuration]

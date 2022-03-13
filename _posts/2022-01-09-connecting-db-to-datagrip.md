@@ -1,6 +1,8 @@
 ---
 title: DataGrip에서 Database 연결하기
-author: Park Jihee
+author:
+  name: Park Jihee
+  link: https://github.com/park-jihee
 date: 2022-01-09 15:20:00 +0800
 categories: [Database]
 tags: [DataGrip, DB]

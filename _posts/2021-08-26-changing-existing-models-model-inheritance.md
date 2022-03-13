@@ -1,6 +1,8 @@
 ---
 title: Odoo의 모델(Model) 상속에 대해 알아보기
-author: Park Bohee
+author:
+  name: Park Bohee
+  link: https://github.com/parkbohee
 date: 2021-08-26 12:23:00 +0800
 categories: [Odoo, models]
 tags: [odoo, ver 13.0, models, 상속]

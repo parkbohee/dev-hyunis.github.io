@@ -1,6 +1,8 @@
 ---
 title: 그룹에 따라 Selection 필드 변경하기
-author: Park Jihee
+author:
+  name: Park Jihee
+  link: https://github.com/park-jihee
 date: 2021-07-01 22:10:00 +0800
 categories: [Odoo, views]
 tags: [odoo, views, selection]

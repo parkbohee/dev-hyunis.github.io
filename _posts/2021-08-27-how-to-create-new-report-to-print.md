@@ -1,6 +1,8 @@
 ---
 title: Odoo PDF 보고서(report) 생성하기
-author: Park Jihee
+author:
+  name: Park Jihee
+  link: https://github.com/park-jihee
 date: 2021-08-27 07:00:00 +0800
 categories: [Odoo, views]
 tags: [odoo, views, report, PDF]

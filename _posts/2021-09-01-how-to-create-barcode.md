@@ -1,6 +1,8 @@
 ---
 title: Odoo 바코드(Barcode) 생성하기
-author: Yoon Sua
+author:
+  name: Yoon Sua
+  link: https://github.com/Yoon-sua
 date: 2021-09-01 06:00:00 +0800
 categories: [Odoo, docs]
 tags: [odoo, 바코드, QR 코드]

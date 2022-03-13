@@ -1,6 +1,8 @@
 ---
 title: 관리자만 수정이 가능하도록 View 변경하기
-author: Park Bohee
+author:
+  name: Park Bohee
+  link: https://github.com/parkbohee
 date: 2021-06-30 23:50:00 +0800
 categories: [Odoo, views]
 tags: [odoo, ver 13.0, views, 상속]

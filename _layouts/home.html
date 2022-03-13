@@ -72,7 +72,7 @@ layout: page
 
         <!-- author -->
         <i class="far fa-copyright"></i>
-        {{ post.author }}
+        {{ post.author.name | default: site.social.name }}
       </div>
 
       {% if post.pin %}

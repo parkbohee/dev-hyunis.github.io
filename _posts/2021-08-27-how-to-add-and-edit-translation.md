@@ -1,6 +1,8 @@
 ---
 title: Odoo에서 번역 추가 및 변경하기
-author: Yoon Sua
+author:
+  name: Yoon Sua
+  link: https://github.com/Yoon-sua
 date: 2021-08-27 06:00:00 +0800
 categories: [Odoo, i18n]
 tags: [odoo, i18n, 번역]
