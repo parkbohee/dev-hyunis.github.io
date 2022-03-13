@@ -1,0 +1,64 @@
+/*
+  The custom styles
+*/
+
+$main-color: #ec322c;
+
+
+#sidebar {
+
+  .profile-wrapper {
+
+    #avatar {
+      visibility: hidden;
+    }
+  }
+}
+
+
+#main-wrapper {
+
+  .post {
+
+    .post-preview {
+      padding-top: 1.4rem;
+      padding-bottom: 1.4rem;
+
+      h1 {
+        font-weight: bold;
+
+        a {
+          color: var(--text-color);
+          border-bottom-color: transparent;
+          transition: all 0.2s;
+
+          &:hover {
+            color: var(--text-color) !important;
+            border-bottom-color: $main-color;
+          }
+        }
+      }
+
+      .post-tags {
+        margin-bottom: 0.8rem;
+
+        span {
+          display: inline-block;
+          color: $main-color;
+          margin-right: 1rem;
+
+          &:before {
+            content: '#';
+            margin-right: 0.1rem;
+          }
+        }
+      }
+
+      .post-content {
+        font-size: 0.95rem;
+        margin-top: 1.0rem;
+        margin-bottom: 0.9rem;
+      }
+    }
+  }
+}
