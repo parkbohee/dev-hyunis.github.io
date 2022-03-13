@@ -5,8 +5,6 @@
 .pagination {
   color: var(--btn-patinator-text-color);
   font-family: 'Lato', sans-serif;
-  justify-content: center;
-  padding-left: 0 !important;
 
   a:hover {
     text-decoration: none;
@@ -24,28 +22,29 @@
       border-radius: 50%;
       border: 1px solid var(--btn-paginator-border-color);
       background-color: var(--button-bg);
+
       &:hover {
         background-color: var(--btn-paginator-hover-color);
       }
     }
+
     &.active {
       .page-link {
-        border-color: var(--main-color);
-        //box-shadow: 0 0 8px 0 var(--btn-paginator-shadow) !important;
-        color: var(--main-color);
-        &:hover {
-          background-color: #ffffff;
-        }
+        background-color: var(--btn-paginator-hover-color);
+        color: var(--btn-text-color);
       }
     }
+
     &.disabled {
       cursor: not-allowed;
+
       .page-link {
         color: rgba(108, 117, 125, 0.57);
         border-color: var(--btn-paginator-border-color);
         background-color: var(--button-bg);
       }
     }
+
     &:first-child .page-link,
     &:last-child .page-link {
       border-radius: 50%;
@@ -60,29 +59,11 @@
 
   .post-preview {
     padding-top: 1.5rem;
-    padding-bottom: 1.6rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--main-border-color);
 
-    .post-tags {
-      margin-bottom: 0.7rem;
-      span {
-        display: inline-block;
-        color: var(--main-color);
-        margin-right: 1rem;
-        &:before {
-          content: '#';
-          margin-right: 0.1rem;
-        }
-      }
-    }
-
-    a {
-      font-weight: bold;
-      &:hover {
-        color: var(--text-color);
-        border-bottom: 1px solid var(--main-color);
-        text-decoration: none;
-      }
+    a:hover {
+      @extend %link-hover;
     }
 
     h1 {
@@ -93,17 +74,22 @@
     .post-meta {
       i {
         font-size: 0.73rem;
+
+        &:not(:first-child) {
+          margin-left: 1.2rem;
+        }
       }
-      span:not(:last-child) {
-        margin-right: 1.2rem;
+
+      em {
+        @extend %normal-font-style;
       }
     }
 
     .post-content {
-      font-size: 0.95rem;
-      margin-top: 1rem;
-      margin-bottom: 0.9rem;
+      margin-top: 0.6rem;
+      margin-bottom: 0.6rem;
       color: var(--post-list-text-color);
+
       > p {
         /* Make preview shorter on the homepage */
         margin: 0;
@@ -121,13 +107,13 @@
         padding-left: 3px;
         color: var(--pin-color);
       }
+
       > span {
         display: none;
       }
     }
 
   } // .post-preview
-
 } // #post-list
 
 /* Hide SideBar and TOC */
@@ -147,9 +133,9 @@
 
 /* Sidebar is visible */
 @media all and (min-width: 831px) {
-
   #post-list {
     margin-top: 1.5rem;
+
     .post-preview .post-meta {
       .pin {
         background: var(--pin-bg);
