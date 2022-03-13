@@ -13,7 +13,7 @@ baseurl: ''
 lang: ko
 
 # Additional parameters for datetime localization, optional. › https://github.com/iamkun/dayjs/tree/dev/src/locale
-prefer_datetime_locale: ko
+prefer_datetime_locale:
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Seoul
@@ -33,7 +33,7 @@ github:
   username: dev-hyunis                  # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username:                             # change to your twitter username
 
 social:
   # Change to your full name.
@@ -42,9 +42,9 @@ social:
   email: dev@hyunis.com                 # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
     - https://github.com/dev-hyunis     # change to your github homepage
     # Uncomment below to add more social links
+    # - https://twitter.com/username
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
