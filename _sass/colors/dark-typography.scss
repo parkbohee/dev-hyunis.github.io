@@ -3,6 +3,9 @@
  */
 
 @mixin dark-scheme {
+  /* Custom */
+  --main-color: #f0615c;
+
   /* Framework color */
   --body-bg: var(--main-wrapper-bg);
   --mask-bg: rgb(68, 69, 70);

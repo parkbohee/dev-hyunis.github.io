@@ -3,6 +3,9 @@
  */
 
 @mixin light-scheme {
+  /* Custom */
+  --main-color: #ec322c;
+
   /* Framework color */
   --body-bg: #fafafa;
   --mask-bg: #c1c3c5;

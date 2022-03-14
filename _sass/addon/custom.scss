@@ -2,8 +2,6 @@
   The custom styles
 */
 
-$main-color: #ec322c;
-
 
 %link-color {
   color: var(--text-color);
@@ -11,16 +9,16 @@ $main-color: #ec322c;
 }
 
 %link-hover {
-  color: $main-color !important;
+  color: var(--main-color) !important;
 }
 
 %link-underline {
-  border-bottom-color: $main-color;
+  border-bottom-color: var(--main-color);
 }
 
 
 .highlighter-rouge {
-  color: $main-color;
+  color: var(--main-color);
 }
 
 
@@ -73,7 +71,7 @@ $main-color: #ec322c;
 
             &:hover {
               color: var(--text-color) !important;
-              border-bottom-color: $main-color;
+              border-bottom-color: var(--main-color);
             }
           }
         }
@@ -83,7 +81,7 @@ $main-color: #ec322c;
 
           span {
             display: inline-block;
-            color: $main-color;
+            color: var(--main-color);
             margin-right: 1rem;
 
             &:before {
@@ -113,8 +111,8 @@ $main-color: #ec322c;
         &.active {
 
           a.page-link {
-            color: $main-color;
-            border-color: $main-color;
+            color: var(--main-color);
+            border-color: var(--main-color);
             background-color: var(--button-bg);
           }
         }
@@ -139,7 +137,14 @@ $main-color: #ec322c;
     .categories {
 
       i {
-        color: $main-color;
+        color: var(--main-color);
+      }
+
+      .category-trigger {
+
+        i {
+          color: var(--text-color);
+        }
       }
     }
 
@@ -154,7 +159,7 @@ $main-color: #ec322c;
 
         &:hover {
           background-color: var(--button-bg);
-          border-color: $main-color !important;
+          border-color: var(--main-color) !important;
         }
       }
     }
@@ -164,14 +169,14 @@ $main-color: #ec322c;
 
     #related-posts {
       margin-top: 3rem !important;
-      margin-bottom: 3rem !important;
+      margin-bottom: 3.4rem !important;
 
       .card {
 
         &:hover {
           transform: none;
           box-shadow: none;
-          border-color: $main-color;
+          border-color: var(--main-color);
         }
 
         .card-body {
@@ -205,8 +210,8 @@ $main-color: #ec322c;
         padding-right: 0.6rem;
 
         &:hover {
-          color: $main-color;
-          border-color: $main-color;
+          color: var(--main-color);
+          border-color: var(--main-color);
           background-color: var(--button-bg);
         }
       }
@@ -219,14 +224,29 @@ $main-color: #ec322c;
         transition: all 0.2s;
 
         &:hover {
-          color: $main-color;
-          border-left-color: $main-color;
+          color: var(--main-color);
+          border-left-color: var(--main-color);
         }
 
         &.active {
-          color: $main-color;
-          border-left: 2px solid $main-color;
+          color: var(--main-color);
+          border-left: 2px solid var(--main-color);
         }
+      }
+    }
+  }
+}
+
+
+@media all and (min-width: 1650px) {
+  #sidebar {
+
+    .sidebar-bottom {
+      padding-left: 3.75rem;
+
+      a {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
       }
     }
   }
