@@ -3,7 +3,7 @@ title: 서버에서 API 문서가 보이지 않는 경우
 author:
   name: Park Jihee
   link: https://github.com/park-jihee
-date: 2022-10-22 09:00:00 +0900
+date: 2022-10-27 09:00:00 +0900
 categories: [Odoo, issue]
 tags: [odoo, issue, server, api]
 ---
@@ -40,6 +40,6 @@ tags: [odoo, issue, server, api]
 
 ## #4
 
-시스템 매개 변수 변경후 새로고침하고 다시 확인해보니 정상적으로 api 문서가 보이게 됩니다.
+시스템 매개 변수 변경한 후 새로고침하고 다시 확인해보니 정상적으로 api 문서가 보이게 됩니다.
 
 ![서버에서 API 문서가 보이지 않는 경우 5](/assets/img/2022-10-27-api-document-cannot-be-viewed-on-the-server/05.png)
