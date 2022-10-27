@@ -107,6 +107,8 @@ msgid "Sale Order Number"
 msgstr "판매 주문 번호"
 ```
 
-# 참고할 수 있는 사이트
+# 마치며, 🙇🏻
+
+## 참고한 사이트
 
 [`Odoo documentation 14.0` Translating Modules](https://www.odoo.com/documentation/14.0/developer/misc/i18n/translations.html){:target="_blank"}

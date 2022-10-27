@@ -60,4 +60,4 @@ tags: [odoo, issue, server]
 
 ## 참고한 사이트
 
-[https://probuse.com/blog/probuse-odoo-apps-25/post/odoo-menu-icons-not-showing-issue-1003](https://probuse.com/blog/probuse-odoo-apps-25/post/odoo-menu-icons-not-showing-issue-1003){:target="_blank"}
+[`Blog` Odoo menu icons not showing issue](https://probuse.com/blog/probuse-odoo-apps-25/post/odoo-menu-icons-not-showing-issue-1003){:target="_blank"}

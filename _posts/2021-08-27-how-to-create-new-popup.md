@@ -8,7 +8,9 @@ categories: [Odoo, views]
 tags: [odoo, views, popup, dialog]
 ---
 
-# Confirm 팝업
+# 팝업의 종류
+
+## 1. Confirm 팝업
 
 `name` 에 버튼 액션명을 지정하고 `confirm` 에 팝업에 표시할 메세지를 작성합니다.
 
@@ -23,7 +25,7 @@ def button_confirm(self):
   # 확인 버튼 클릭시 실행
 ```
 
-# 오류 메세지 팝업
+## 2. 오류 메세지 팝업
 
 xml에 버튼을 추가합니다.
 
@@ -48,7 +50,7 @@ def button_error(self):
 - RedirectWarning : 리디렉션 경고
 - AccessDenied : 접근 거부
 
-# 사용자 정의 팝업
+## 3. 사용자 정의 팝업
 
 내가 원하는 동작을 하기 위한 팝업을 생성합니다.
 
@@ -75,7 +77,9 @@ def button_function(self):
 - res_model : 사용할 모델
 - view_id : 팝업 화면 이름
 
-# 참고할 수 있는 사이트
+# 마치며, 🙇🏻
+
+## 참고한 사이트
 
 [`Odoo documentation 14.0` Actions - Window Actions](https://www.odoo.com/documentation/14.0/developer/reference/addons/actions.html?highlight=popup#window-actions-ir-actions-act-window){:target="_blank"}
 

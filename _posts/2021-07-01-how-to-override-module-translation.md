@@ -59,8 +59,10 @@ $  python odoo-bin --config=./config/.odoorc --i18n-overwrite -u module_name
 $  python odoo-bin --config=./config/.odoorc --i18n-overwrite -u module_name1,module_name2,module_name3
 ```
 
-# 참고한 사이트
+# 마치며, 🙇🏻
 
-[https://www.odoo.com/documentation/14.0/developer/reference/cmdline.html?highlight=command#internationalisation](https://www.odoo.com/documentation/14.0/developer/reference/cmdline.html?highlight=command#internationalisation){:target="_blank"}
+## 참고한 사이트
 
-[https://www.odoo.com/es_ES/forum/ayuda-1/how-to-override-a-module-translation-73287](https://www.odoo.com/es_ES/forum/ayuda-1/how-to-override-a-module-translation-73287){:target="_blank"}
+[`Odoo documentation 14.0` Command-line interface (CLI)](https://www.odoo.com/documentation/14.0/developer/reference/cmdline.html?highlight=command#internationalisation){:target="_blank"}
+
+[`Odoo forum` How to override a module translation?](https://www.odoo.com/es_ES/forum/ayuda-1/how-to-override-a-module-translation-73287){:target="_blank"}

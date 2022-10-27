@@ -89,7 +89,9 @@ class ResPartner(models.Model):
 
 ![Odoo 3가지 모델 상속](/assets/img/2021-08-26-changing-existing-models-model-inheritance/02.%20delegation%20inheritance.png)
 
-# 참고할 수 있는 사이트
+# 마치며, 🙇🏻
+
+## 참고한 사이트
 
 [`Odoo documentation 14.0` ORM API - Inheritance and extension](https://www.odoo.com/documentation/14.0/developer/reference/addons/orm.html#inheritance-and-extension){:target="_blank"}
 

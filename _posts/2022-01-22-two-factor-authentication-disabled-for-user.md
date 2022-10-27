@@ -44,6 +44,8 @@ Two-factor authentication disabled for user(s) '<사용자 이메일>'
 
 ![사용자 2단계 인증(2FA) 비활성화 4](/assets/img/2022-01-22-two-factor-authentication-disabled-for-user/04.png)
 
-# 참고할 수 있는 사이트
+# 마치며, 🙇🏻
+
+## 참고한 사이트
 
 [`Odoo documentation 14.0` Two-factor Authentication](https://www.odoo.com/documentation/14.0/applications/general/auth/2fa.html){:target="_blank"}

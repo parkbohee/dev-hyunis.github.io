@@ -1,11 +1,11 @@
 ---
-title: 오두에서 날짜 및 시간 형식을 변경하는 방법
+title: Odoo 날짜 및 시간 형식을 변경하기
 author:
   name: Park Jihee
   link: https://github.com/park-jihee
 date: 2022-10-26 18:00:00 +0900
 categories: [Odoo, docs]
-tags: [odoo, views, setting, widget]
+tags: [odoo, views, widget]
 ---
 
 오두 기본 필드 중 날짜(시간) 필드는 2개로 나눌 수 있습니다.
@@ -29,6 +29,8 @@ Datetime 필드의 시·분·초를 제거하고 년·월·일까지만 나타�
 <field name="create_date" widget="date"/>
 <field name="write_date"/>
 ```
+
+<br>
 
 위젯을 사용한 결과를 확인해보면 작성일자의 경우 년·월·일까지만 표시되고, 최근 갱신 일자는 시·분·초까지 나타나게 됩니다.
 
@@ -68,5 +70,4 @@ Datetime 필드의 시·분·초를 제거하고 년·월·일까지만 나타�
 
 ## 참고한 사이트
 
-[https://www.youtube.com/watch?v=Cl6DiqJnM8M&ab_channel=OdooMates](https://www.youtube.com/watch?v=Cl6DiqJnM8M&ab_channel=OdooMates){:target="_blank"}
-
+[`Youtube` How To Change Date and Time Format in Odoo](https://www.youtube.com/watch?v=Cl6DiqJnM8M&ab_channel=OdooMates){:target="_blank"}

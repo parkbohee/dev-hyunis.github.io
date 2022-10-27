@@ -98,7 +98,9 @@ position 속성 중 `attributes` 속성이 가장 많이 사용됩니다.
 </record>
 ```
 
-# 참고할 수 있는 사이트
+# 마치며, 🙇🏻
+
+## 참고한 사이트
 
 [`Odoo documentation 14.0` Views - Inheritance](https://www.odoo.com/documentation/14.0/developer/reference/addons/views.html#inheritance){:target="_blank"}
 

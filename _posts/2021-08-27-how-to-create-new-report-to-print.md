@@ -137,7 +137,9 @@ report_template.xml 에 바닥글 템플릿을 작성해주세요.
 </template>
 ```
 
-# 완성된 보고서
+# 마치며, 🙇🏻
+
+## 참고한 사이트
 
 [`Odoo documentation 14.0` QWeb Reports](https://www.odoo.com/documentation/14.0/developer/reference/addons/reports.html#reference-reports-report){:target="_blank"}
 
