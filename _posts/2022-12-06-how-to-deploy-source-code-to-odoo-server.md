@@ -22,12 +22,6 @@ tags: [odoo, server, deploy]
 
 # 서버 접속
 
-## keypair 파일 다운로드
-
-[https://hyungis.sharepoint.com/:u:/s/Dev/EVWtWfUJKcpGpPV4mSgxNykBbvCfibECw6PdpwDfSc_RZw?e=LieScl](https://hyungis.sharepoint.com/:u:/s/Dev/EVWtWfUJKcpGpPV4mSgxNykBbvCfibECw6PdpwDfSc_RZw?e=LieScl)
-
-<br>
-
 ## keypair 파일 권한 변경
 
 ```bash
