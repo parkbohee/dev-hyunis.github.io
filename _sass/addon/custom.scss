@@ -223,14 +223,14 @@
         border-left: 1px solid transparent;
         transition: all 0.2s;
 
-        &:hover {
-          color: var(--main-color);
-          border-left-color: var(--main-color);
+        &:hover, &:focus {
+          color: var(--main-color) !important;
+          border-left-color: var(--main-color) !important;
         }
 
         &.active {
-          color: var(--main-color);
-          border-left: 2px solid var(--main-color);
+          color: var(--main-color) !important;
+          border-left: 2px solid var(--main-color) !important;
         }
       }
     }
