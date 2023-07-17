@@ -21,7 +21,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 현정보시스템 기술 블로그               # the main title
+title: 박보희 기술 블로그               # the main title
 
 description: >-                        # used by seo meta and the atom feed
   기억보단 기록을. 현정보시스템 기술개발팀 기술 블로그입니다.
